@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 25, 2024 at 02:59 AM
+-- Generation Time: Jan 26, 2024 at 02:32 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -41,7 +41,8 @@ CREATE TABLE `adminusers` (
 --
 
 INSERT INTO `adminusers` (`user_id`, `name`, `username`, `password`, `role`, `Created_at`) VALUES
-(1, 'Nicolle Gutierrez', 'Nicsxx', '$2y$10$qm6j/rt7ysX9Wuvij/7PPurE8uTwB4FVzPhKkXOgJ9Jj/djDxu8sm', 'Staff', '2024-01-23 09:25:56');
+(1, 'Nicolle Gutierrez', 'Nicsxx', '$2y$10$qm6j/rt7ysX9Wuvij/7PPurE8uTwB4FVzPhKkXOgJ9Jj/djDxu8sm', 'Staff', '2024-01-23 09:25:56'),
+(2, 'Aldrich Gutierrez', 'aldrich', '$2y$10$nxpBG6XtB5XNrA4a.3rXY.PT.y5./mrc/iV5fsoyqSK8Sk75IP54G', 'Admin', '2024-01-25 12:45:40');
 
 -- --------------------------------------------------------
 
@@ -180,7 +181,7 @@ INSERT INTO `product_tbl` (`prod_id`, `prod_name`, `prod_quantity`, `prod_mprice
 (1, 'Quesadillas', 50, '160.00', 0.00, 'Appetizer', '00001'),
 (2, 'Nachos', 4, '120.00', 0.00, 'Appetizer', '121212121'),
 (3, 'Fries', 8, '120.00', 0.00, 'Appetizer', '8'),
-(4, 'Fried Chicken w/ Gravy', 5, '148.00', 0.00, 'Meals', '1'),
+(4, 'Fried Chicken w/ Gravy', 5, '148.00', 0.00, 'Meals', '00777'),
 (5, 'Honey', 6, '155.00', 0.00, 'Meals', '3'),
 (6, 'Orange Chicken', 5, '155.00', 0.00, 'Meals', '8'),
 (7, 'Burger Steak', 9, '160.00', 0.00, 'Meals', '8'),
@@ -193,17 +194,17 @@ INSERT INTO `product_tbl` (`prod_id`, `prod_name`, `prod_quantity`, `prod_mprice
 (14, 'Beef Bulgogi', 1, '168.00', 0.00, 'Meals', '1'),
 (15, 'Korean Beef Stew', 1, '188.00', 0.00, 'Meals', '1'),
 (16, 'Chicken Parmegiana', 1, '168.00', 0.00, 'Meals', '1'),
-(17, 'Carbonara', 1, '170.00', 0.00, 'Pasta', '10'),
+(17, 'Carbonara', 1, '170.00', 0.00, 'Pasta', '10121'),
 (18, 'Classic Spaghetti', 1, '170.00', 0.00, 'Pasta', '1'),
 (19, 'Truffle Pasta', 1, '170.00', 0.00, 'Pasta', '1'),
 (20, 'Chicken Alfrado', 1, '170.00', 0.00, 'Pasta', '1'),
 (21, 'Tuna Pesto', 1, '170.00', 0.00, 'Pasta', '1'),
 (22, 'Parmegiana Meatball', 1, '190.00', 0.00, 'Pasta', '1'),
-(30, 'Classic Ceasar', 1, '180.00', 0.00, 'Salad', '1829392'),
+(30, 'Classic Ceasar', 1, '180.00', 0.00, 'Salad', '1'),
 (31, 'Chef Salad', 1, '180.00', 0.00, 'Salad', '1'),
 (32, 'Chicken Salad', 1, '180.00', 0.00, 'Salad', '1'),
 (33, 'Tuna Salad', 1, '180.00', 0.00, 'Salad', '1'),
-(34, 'Mushroom Soup', 12, '150.00', 0.00, 'Soup', '1983977'),
+(34, 'Mushroom Soup', 12, '150.00', 0.00, 'Soup', '128212'),
 (35, 'Crab and Corn', 1, '150.00', 0.00, 'Soup', '1'),
 (36, 'Pumpkin Soup', 1, '150.00', 0.00, 'Soup', '1'),
 (37, 'Beef Bulgogi', 10, '160.00', 0.00, 'Others', '1'),
@@ -224,7 +225,7 @@ INSERT INTO `product_tbl` (`prod_id`, `prod_name`, `prod_quantity`, `prod_mprice
 (52, 'Caramel Latte', 45, '145.00', 180.00, 'Flavored Coffee', '1245'),
 (53, 'Cookies and Cream', 13, '150.00', 170.00, 'Flavored Coffee', '32422'),
 (54, 'Spanish Latte', 23, '140.00', 155.00, 'Flavored Coffee', '61361'),
-(55, 'Brewed Coffee', 23, '45.00', 55.00, 'Hot Coffee', '1213'),
+(55, 'Brewed Coffee', 23, '45.00', 0.00, 'Hot Coffee', '0027'),
 (56, 'Espresso', 34, '40.00', 55.00, 'Hot Coffee', '1213'),
 (57, 'Capuccino', 24, '80.00', 90.00, 'Hot Coffee', 'q7275'),
 (58, 'Caphe Vietnam', 23, '80.00', 0.00, 'Hot Coffee', '43'),
@@ -234,7 +235,7 @@ INSERT INTO `product_tbl` (`prod_id`, `prod_name`, `prod_quantity`, `prod_mprice
 (62, 'Mocha Latte', 12, '90.00', 100.00, 'Hot Coffee', '123'),
 (63, 'Caramel Latte', 1, '95.00', 105.00, 'Hot Coffee', '1265'),
 (64, 'Spanish Latte', 18, '90.00', 100.00, 'Hot Coffee', '123'),
-(65, 'Americano', 12, '90.00', 110.00, 'Iced Coffee', '1'),
+(65, 'Americano', 12, '90.00', 0.00, 'Iced Coffee', '1010'),
 (66, 'Caphe Vietnam', 23, '120.00', 0.00, 'Iced Coffee', '1'),
 (67, 'Caffe Latte', 12, '130.00', 140.00, 'Iced Coffee', '21'),
 (68, 'Vanilla', 12, '140.00', 155.00, 'Non Coffee Frappe', '2'),
@@ -245,7 +246,8 @@ INSERT INTO `product_tbl` (`prod_id`, `prod_name`, `prod_quantity`, `prod_mprice
 (73, 'Java Chip', 12, '150.00', 175.00, 'Non Coffee Frappe', '12'),
 (74, 'Salted Caramel', 1, '150.00', 165.00, 'Non Coffee Frappe', '12'),
 (75, 'Taro Cream Cheese', 24, '150.00', 165.00, 'Non Coffee Frappe', '12'),
-(76, 'Double Dutch', 34, '150.00', 165.00, 'Non Coffee Frappe', '1');
+(76, 'Double Dutch', 34, '150.00', 165.00, 'Non Coffee Frappe', '1'),
+(79, 'lasagna', 12, '80.00', 0.00, 'Pasta', '101010');
 
 -- --------------------------------------------------------
 
@@ -372,7 +374,7 @@ ALTER TABLE `tbl_orders`
 -- AUTO_INCREMENT for table `adminusers`
 --
 ALTER TABLE `adminusers`
-  MODIFY `user_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `complaint`
@@ -408,7 +410,7 @@ ALTER TABLE `orderdetails`
 -- AUTO_INCREMENT for table `product_tbl`
 --
 ALTER TABLE `product_tbl`
-  MODIFY `prod_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
+  MODIFY `prod_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
 
 --
 -- AUTO_INCREMENT for table `tablereservation`
@@ -447,6 +449,12 @@ ALTER TABLE `tablereservation`
   ADD CONSTRAINT `tablereservation_ibfk_1` FOREIGN KEY (`CustomerID`) REFERENCES `customers` (`CustomerID`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   ADD CONSTRAINT `tablereservation_ibfk_2` FOREIGN KEY (`productID`) REFERENCES `product_tbl` (`prod_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   ADD CONSTRAINT `tablereservation_ibfk_3` FOREIGN KEY (`emplpyeeID`) REFERENCES `employee` (`EmployeeID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+--
+-- Constraints for table `tbl_orders`
+--
+ALTER TABLE `tbl_orders`
+  ADD CONSTRAINT `tbl_orders_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `product_tbl` (`prod_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
